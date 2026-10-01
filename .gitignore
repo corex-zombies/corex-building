@@ -1,0 +1,21 @@
+# Local development and private server state
+.env
+.env.*
+!.env.example
+node_modules/
+__pycache__/
+*.py[cod]
+*.py
+tests/
+test/
+coverage/
+.pytest_cache/
+*.log
+*.tmp
+*.bak
+*.blend*
+*.zip
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

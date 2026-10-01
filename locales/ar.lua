@@ -1,0 +1,56 @@
+BuildingLocales = BuildingLocales or {}
+BuildingLocales.ar = {
+    tiers = { wood = 'خشب', stone = 'حجر', steel = 'حديد' },
+    labels = {
+    foundation = 'أساس', foundation_triangle = 'أساس مثلث', floor = 'أرضية', floor_triangle = 'أرضية مثلثة',
+    wall = 'جدار', wall_half = 'نصف جدار', wall_low = 'جدار منخفض', wall_door = 'إطار باب', wall_window = 'جدار نافذة',
+    door = 'باب', shutter = 'مصراع نافذة', window_bars = 'شبك نافذة', roof_slope = 'سقف مائل', roof_corner = 'زاوية سقف',
+    gable = 'نهاية سقف', gable_half = 'نصف نهاية سقف', ridge = 'وصلة سقف', pillar = 'عمود', beam = 'عارضة',
+    stairs = 'درج', ramp = 'منحدر', railing = 'درابزين', fence = 'سياج', gate_frame = 'إطار بوابة', gate = 'بوابة',
+    ladder = 'سلم', hatch_frame = 'أرضية بفتحة', hatch = 'غطاء فتحة'
+},
+    text = {
+    place = '[كليك يسار] بناء', cancel = '[كليك يمين] إلغاء', rotate = '[عجلة الماوس] تدوير',
+    ready = 'جاهز للبناء', magnetic = 'التثبيت تلقائي على الحافة', pending = 'جارٍ تثبيت القطعة…', placed = 'تم البناء',
+    cycleAttachment = '[عجلة الماوس] اختيار موضع التركيب', freePlacement = '[%s] تغيير وضع البناء',
+    toggleFree = 'تبديل وضع البناء الحر', freeMode = 'الوضع الحر', snapMode = 'التثبيت على البناء',
+    guides = 'القطع الشفافة توضح أماكن التركيب المتاحة',
+    open = 'فتح', close = 'إغلاق', manage = 'إدارة المبنى', password = 'باسورد الباب',
+    doorInteract = 'فتح / إغلاق باب البناء القريب',
+    passwordHint = 'اتركه فارغًا لباب بدون باسورد', setPassword = 'تغيير الباسورد', clearPassword = 'إزالة الباسورد',
+    upgrade = 'ترقية', remove = 'إزالة', removeConfirm = 'إزالة هذه القطعة؟',
+    kitTitle = 'حزمة اختبار البناء', kitSummary = 'تقدم حزمة %s ×%d: تم توفير %d/%d نوع.',
+    kitGiven = 'وصلتك هذه المرة: ', kitAlready = 'موجودة عندك مسبقًا: ', kitMissing = 'باقي لم تصلك (السعة أو تعذر الإضافة): ',
+    kitUnknown = 'غير مؤكد؛ تحقق من المخزون: ', kitDenied = 'هذا الأمر للأدمن فقط',
+    kitComplete = 'اكتملت كل الأنواع؛ لتعبئة النواقص وبدء تجربة جديدة: /%s %s reset',
+    kitUsage = 'استخدم /%s wood|stone|steel [العدد أو reset]؛ العدد من 1 إلى %d',
+    reasons = {
+        floor_required = 'ضع أرضية بناء أولًا', ground_required = 'ضع الأساس على أرض ثابتة',
+        ground_miss = 'لم يتم العثور على أرض تحت أحد أركان القطعة', ground_height = 'الأرض بعيدة عن ارتفاع الأساس الملتقط',
+        aim_lost = 'وجه التصويب إلى دعم بناء قريب',
+        frame_required = 'تحتاج إطارًا مناسبًا لهذه القطعة', support_required = 'لا يوجد دعم مناسب',
+        roof_required = 'ضع سقفًا مائلًا أولًا؛ هذه القطعة تركب على قمته',
+        wall_required = 'هذه القطعة تركب على قمة جدار مناسب', pillar_required = 'هذه القطعة تحتاج عمود دعم',
+        occupied = 'هذا المكان مشغول', overlap = 'القطعة تتداخل مع بناء آخر', obstructed = 'المكان غير خالٍ',
+        not_owner = 'هذا البناء ليس لك', wrong_bucket = 'هذا البناء في عالم آخر',
+        too_far = 'اقترب من مكان البناء', too_high = 'وصلت للارتفاع المسموح',
+        slope = 'الأرض مائلة أكثر من المسموح', water = 'البناء داخل الماء غير مسموح',
+        checking = 'جارٍ فحص مكان البناء',
+        checking_ground = 'جارٍ فحص الأرض تحت القطعة', checking_world = 'جارٍ فحص العوائق حول القطعة',
+        probe_failed = 'تعذّر فحص التصادم؛ حرّك القطعة وحاول مجددًا',
+        safe_zone = 'البناء داخل المنطقة الآمنة غير مسموح', limit = 'وصلت للعدد المسموح',
+        invalid_position = 'مكان البناء غير صالح', invalid_item = 'قطعة البناء غير متاحة',
+        preview_changed = 'تغيرت المعاينة؛ راجع موضعها واضغط مرة أخرى', aim_structure = 'وجّه التصويب إلى قطعة قريبة تملكها',
+        expired = 'استخدم آيتيم البناء مرة أخرى', missing_item = 'لا تملك الآيتيم المطلوب',
+        busy = 'انتظر انتهاء العملية الحالية', unavailable = 'نظام البناء غير جاهز',
+        inventory_unknown = 'تعذر تأكيد الآيتيم؛ العملية محفوظة لمراجعة الإدارة',
+        persistence = 'تعذر تأكيد الحفظ؛ العملية محفوظة لمراجعة الإدارة',
+        password_invalid = 'الباسورد غير صحيح أو لا يطابق الطول المطلوب',
+        locked = 'هذا الباب محمي بباسورد', rate_limited = 'انتظر قليلًا قبل المحاولة التالية',
+        stale = 'تغيرت حالة القطعة؛ حاول مرة أخرى', has_children = 'أزل القطع المرتبطة أولًا',
+        no_upgrade = 'هذه القطعة في أعلى مستوى', blocked = 'البناء هنا غير مسموح',
+        unconfirmed = 'تعذر تأكيد العملية؛ تحقق من حالة المبنى قبل إعادة المحاولة',
+        kit_count = 'للحزمة الحالية عدد ثابت؛ لتغييره ابدأ حزمة جديدة باستخدام reset'
+    }
+}
+}
